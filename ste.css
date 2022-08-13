@@ -1,0 +1,133 @@
+:root {
+    --overlay-coler:#03a9f4;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   font-family: 'poppins', sans-serif;
+}
+.shocase {
+    position: absolute;
+    right:0 ;
+    width: 100%;
+    min-height:100vh ;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111;
+    color: #fff;
+    align-items: center;
+    z-index: 2;
+
+}
+.shocase.active {
+    right: 300px;
+}
+.shocase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+z-index: 1000;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.logo {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.menu ul {
+    position: relative;
+    list-style: none;
+}
+.menu li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #111;
+}
+.menu ul li a:hover {
+    color: var(--overlay-coler);
+}
+
+.toggl {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url(icons8-menu-48.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+    background-size: 40px;
+   cursor: pointer;
+}
+.toggl.active {
+    background: url(icons8-multiply-16.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+}
+.shocase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+object-fit: cover;
+opacity: 0.8;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+    color: #111;
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    
+}
+
+.text h3 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+
+}
+.text p {
+    font-size: 25px;
+    margin: 20px;
+    font-weight: 400;
+    max-width: 700px;
+    text-align: center;
+
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    background-color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #111;
+    margin: 10px;
+}
+
+
